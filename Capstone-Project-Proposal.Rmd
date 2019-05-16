@@ -26,3 +26,5 @@ While sensitive HR data will be occluded from the dataset per company policy, so
 An effort will be made to define "pencil whipping" in terms of the data in order to model a pattern that can be applied to other departments. As the model is built and the data analyzed, this definition is likely to evolve. 
 
 The collection and aggregation of the Level 1 data has already been operationalized and data is updated weekly for leadership dashboards. If the model functions as intended, the model could be integrated into the code that pulls the Level 1 data, adjusting the weight of the data that falls in the pattern as determined by leadership (either dropping it entirely or weighing it differently). 
+
+test

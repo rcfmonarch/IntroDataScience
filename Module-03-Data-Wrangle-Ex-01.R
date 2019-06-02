@@ -41,7 +41,6 @@ datafix <- data %>%
 datafix
 
 # Step 3: Add Product Categories
-
 datafix2 <- datafix %>% 
   mutate("product_category" = case_when (
     datafix$product_code == "p" ~ "Smartphone",
@@ -53,13 +52,11 @@ datafix2 <- datafix %>%
 datafix2
 
 # Step 4: Add full address for geocoding
-
 datafix3 <- datafix2 %>% 
   mutate("full_address" = paste(address, city, country, sep=","))
 datafix3
 
 # Step 5: Create Dummary Variables for Company and Product Category
-
 datafix4 <- datafix3 %>% 
   mutate("company_philips" = ifelse(companyfix == "philips",1,0)) %>% 
   mutate("company_akzo" = ifelse(companyfix == "akzo",1,0)) %>% 

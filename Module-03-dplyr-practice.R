@@ -85,10 +85,3 @@ flights %>%
   mutate(change = flight_count - lag(flight_count))
 
 glimpse(flights)
-
-
-
-
-
-
-

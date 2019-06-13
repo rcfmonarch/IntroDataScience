@@ -1,0 +1,18 @@
+---
+title: "Module-3-Data-Wrangling-Capstone Report"
+author: "Rob Fontenot"
+date: "6/13/2019"
+output: html_document
+---
+
+## Obtaining and Cleaning the Data
+
+The data for this Capstone Project has been derived from the Learning Management System (LMS) of a major retailer. With approximately 1,000 active courses, each with a Level 1 Likert-scale survey attached, and over 340,000 associates taking said courses, we have plenty of raw data to use. 
+
+The data was extracted from the LMS using SQL code. First, an audience was selected. Code was written to identify all active members of one of the fifteen merchandising departments, in this case, the D24-Paint Department. This particular department was chosen randomly. The audience represents 11,712 total associates. 
+
+Next, SQL was written to pull the answers to all of the questions any of these associates might've answered throughout their tenure. This resulted in approximately 2,717,329 total rows of data.
+
+Having direct access to the LMS allowed for the customization of SQL to pull data in specific ways, eliminating empty fields, filtering for specific types of questions (Likert-based), etc. In this way, the dataset of "pre-cleaned" so that the values in the fields pulled would be ready for analysis. 
+
+The quantity of records was still large and could not reasonably be run in a single execution of the SQL code. Hence, Python code was created to query the audience, then run a single pull for each member of the audience, saving each member's data to a separate CSV file. Python code was then built to merge all of the CSV files into a single dataset for manipulation and analysis.
